@@ -5,9 +5,7 @@ int main()
     string filename = "text.txt";
     vector<string> words = wordsFromFile(filename);
     
-    //for(string i : words) {
-        //cout << i << " ";
-    //}
+    words = sort(words);
     
     for (int i = 0; i < words.size(); i++) {
         cout << words[i] << " ";

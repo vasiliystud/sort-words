@@ -25,3 +25,28 @@ vector<string> wordsFromFile(string filename)
     return words;
 }
 
+string strtolower(string str)
+{
+    
+transform(str.begin(), str.end(), str.begin(), ::tolower);
+
+return str;
+}
+
+vector<string> sort(vector<string> words)
+{
+    string tmp="";
+    
+    for (int i=0;i < words.size() ;i++) {
+        for(int j = i; j < words.size(); j++) {
+            if(strtolower(words[i]) > strtolower(words[j])) {
+                tmp = words[i]; 
+                words[i] = words[j];
+                words[j] = tmp;
+           }
+        }
+    }
+    
+    return words;
+}
+
