@@ -17,6 +17,9 @@ test: functions.o test.o
 
 test.o:
 	$(CC) -Wall -c $(TEST_DIR)/test.cpp -o test.o
+	
+runtest:
+	./testbin
 
 .cpp.o:
 	$(CC) $(CFLAGS) $< -o $@
