@@ -24,3 +24,4 @@ vector<string> wordsFromFile(string filename)
     
     return words;
 }
+
