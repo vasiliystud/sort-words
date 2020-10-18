@@ -4,14 +4,20 @@
 
 TEST_CASE ("Text has special characters or numbers between whitespaces")
 {
-    wordsFromFile("test/1.txt");
-    vector<string> expected("Hello", "World");
-    REQUIRE(expected == wordsFromFile("1.txt"));
+    string expected = "HelloWorld";
+    string result;
+    for(string s : wordsFromFile("test/1.txt")) {
+        result+= s;
+    }
+    REQUIRE(expected == result);
 }
 
 TEST_CASE ("Text has special characters or numbers between lettets")
 {
-    wordsFromFile("test/2.txt");
-    vector<string> expected("Hello", "World");
-    REQUIRE(expected == wordsFromFile("1.txt"));
+    string expected = "HelloWorld";
+    string result;
+    for(string s : wordsFromFile("test/2.txt")) {
+        result+= s;
+    }
+    REQUIRE(expected == result);
 }
