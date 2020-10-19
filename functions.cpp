@@ -35,9 +35,9 @@ return str;
 
 vector<string> sort(vector<string> words)
 {
-    string tmp="";
+    string tmp = "";
     
-    for (int i=0;i < words.size() ;i++) {
+    for (int i = 0;i < words.size() ;i++) {
         for(int j = i; j < words.size(); j++) {
             if(strtolower(words[i]) > strtolower(words[j])) {
                 tmp = words[i]; 
