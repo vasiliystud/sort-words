@@ -7,7 +7,7 @@ int main()
     
     words = sort(words);
     
-    for (int i = 0; i < words.size(); i++) {
+    for (size_t i = 0; i < words.size(); i++) {
         cout << words[i] << " ";
     }
     return 0;
